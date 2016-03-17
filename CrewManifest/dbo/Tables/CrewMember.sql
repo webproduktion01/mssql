@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [dbo].[CrewMember] (
-    [CrewMemberID]  INT           NOT NULL ,
+    [CrewMemberID]  INT           IDENTITY(1,1) NOT NULL ,
     [FirstName]     NVARCHAR (50) NOT NULL,
     [LastName]      NVARCHAR (50) NULL,
     [Gender]        BIT           NULL,

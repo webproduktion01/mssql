@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [dbo].[Death] (
-    [DeathID]          INT            NOT NULL,
+    [DeathID]          INT            IDENTITY(1,1) NOT NULL,
     [DeathCause]       NVARCHAR (50)  NULL,
     [DeathDescription] NVARCHAR (MAX) NULL,
     [DeathDate]        DATETIME       NOT NULL,
