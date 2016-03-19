@@ -76,6 +76,7 @@
     <None Include="DatabaseGenerationScripts\DataInsertion.sql" />
     <None Include="Requested queries\casualties.sql" />
     <None Include="Requested queries\DeathNameCauseAndDate.sql" />
+    <Build Include="DatabaseGenerationScripts\NostromoDropAndCreateTablesSQL.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Requested queries\deadCaptainsThatMakeOver50000.sql" />
