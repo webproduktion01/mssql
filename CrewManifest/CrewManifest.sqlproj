@@ -60,16 +60,13 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
-    <Folder Include="dbo\" />
-    <Folder Include="dbo\Tables\" />
+    <Folder Include="DatabaseGenerationScripts" />
+    <Folder Include="Requested queries" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="dbo\Tables\Department.sql" />
-    <Build Include="dbo\Tables\Planet.sql" />
-    <Build Include="dbo\Tables\Rank.sql" />
-    <Build Include="dbo\Tables\CrewMember.sql" />
-    <Build Include="dbo\Tables\Assignment.sql" />
-    <Build Include="dbo\Tables\Death.sql" />
-    <Build Include="dbo\Tables\Species.sql" />
+    <None Include="DatabaseGenerationScripts\DataInsertion.sql" />
+    <Build Include="DatabaseGenerationScripts\NostromosDatabaseDropAndCreateTo.sql" />
+    <Build Include="DatabaseGenerationScripts\SchemaGeneratingScript.sql" />
+    <None Include="Requested queries\casualties.sql" />
   </ItemGroup>
 </Project>
