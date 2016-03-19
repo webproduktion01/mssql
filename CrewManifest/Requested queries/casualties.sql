@@ -1,6 +1,7 @@
 ﻿
 --Crewmembers can be assigned to more than one department
-select c.FirstName +' ' +c.LastName as 'Full Name', 
+select c.FirstName +' ' +case when c.LastName is null then ''
+else c.LastName end as 'Full Name', 
 dp.DepartmentName as 'Department', 
 p.PlanetName as 'Homeplanet', 
 case

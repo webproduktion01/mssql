@@ -85,6 +85,5 @@
     <None Include="Requested queries\MaxPayOfDeceased.sql" />
     <None Include="Requested queries\aggregateByDeathCause.sql" />
     <None Include="Requested queries\averagepayofcrewAliveAndDead.sql" />
-    <None Include="DatabaseGenerationScripts\Test.sql" />
   </ItemGroup>
 </Project>

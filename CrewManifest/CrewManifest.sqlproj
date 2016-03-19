@@ -65,7 +65,32 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="DatabaseGenerationScripts\DataInsertion.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Requested queries\aggregateByDeathCause.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Requested queries\AggregatedRankedMembers.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Requested queries\averagepayofcrewAliveAndDead.sql" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Requested queries\casualties.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Requested queries\deadCaptainsThatMakeOver50000.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Requested queries\DeadPeopleFromCertainPlanet.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Requested queries\DeadWithNameBetweenToDate.sql" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Requested queries\DeathNameCauseAndDate.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Requested queries\MaxPayOfDeceased.sql" />
   </ItemGroup>
 </Project>
