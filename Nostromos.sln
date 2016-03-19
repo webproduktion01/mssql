@@ -5,6 +5,11 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Nostromo_Database", "Nostromo_Database\Nostromo_Database.sqlproj", "{6A1B0458-6687-49C5-901F-8FC8610E53F2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Folder", "Folder", "{D4ACC483-F357-48FA-96CD-6B7B5EE83240}"
+	ProjectSection(SolutionItems) = preProject
+		Nostromo_Database\DatabaseGenerationScripts\Test.sql = Nostromo_Database\DatabaseGenerationScripts\Test.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
