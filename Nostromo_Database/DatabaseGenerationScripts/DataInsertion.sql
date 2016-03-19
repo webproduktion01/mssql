@@ -32,7 +32,7 @@ insert into Department values ('Science','A place where fantasy becomes reality,
 
 
 
---Planets , well there's 2 but only one is ever used as no one has ever been borne near a gas giant. not that anyone knows of
+--Planets , well there's 2 but only one is ever used as no one has ever been born on a gas giant. Atleast not that humanity knows of in this universe
 insert into Planet values ('Earth','Homeworld of the human race, has one relatively large moon');
 insert into Planet values ('Calpamos','A ringed gas giant with three moons');
 
@@ -147,10 +147,10 @@ insert into Assignment values (
 --Date of most deaths was after June 3, 2122. Could have re-watched movie and estimated exact time of death for crew members but this in an approximation
 insert into Death values ((select DeathCause.DeathCauseID from DeathCause where DeathCause.DeathCause ='Animal attack'),'disabled by alien and dragged to alien den where he was killed by a alien chestburster',dateadd(DAY,7,@todaysdate));
 insert into Death values ((select DeathCause.DeathCauseID from DeathCause where DeathCause.DeathCause ='Animal attack'),'Attacked and impregnated by a alien facehugger and later died when the alien chestburster emerged',dateadd(DAY,1,@todaysdate));
-insert into Death values ((select DeathCause.DeathCauseID from DeathCause where DeathCause.DeathCause ='Unplanned disassembly'),'Destroyed by virus which wiped out a shuttle mainframe', '2159-01-01 00:00:00');
+insert into Death values ((select DeathCause.DeathCauseID from DeathCause where DeathCause.DeathCause ='Unplanned disassembly'),'Destroyed by virus which wiped a shuttles mainframe memory', '2159-01-01 00:00:00');
 insert into Death values ((select DeathCause.DeathCauseID from DeathCause where DeathCause.DeathCause ='Animal attack'),'killed by Alien whilst gathering oxygen tanks',dateadd(DAY,14,@todaysdate));
 insert into Death values ((select DeathCause.DeathCauseID from DeathCause where DeathCause.DeathCause ='Animal attack'),'killed by Alien in crews first encounter with adult alien',dateadd(DAY,6,@todaysdate));
-insert into Death values ((select DeathCause.DeathCauseID from DeathCause where DeathCause.DeathCause ='Old age'),'Died by old age, cats only live about 20 years',dateadd(YEAR,57,@todaysdate));
+insert into Death values ((select DeathCause.DeathCauseID from DeathCause where DeathCause.DeathCause ='Old age'),'Died by old age, cats only live about 20 years. Hypersleep makes him a bit older than he should be though',dateadd(YEAR,57,@todaysdate));
 
 update CrewMember set DeceasedID = (select Death.DeathID from Death where Death.DeathDescription like '%alien den%')
 where CrewMember.LastName = 'Dallas';
