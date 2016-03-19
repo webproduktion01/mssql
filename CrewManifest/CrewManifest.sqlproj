@@ -65,8 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="DatabaseGenerationScripts\DataInsertion.sql" />
-    <Build Include="DatabaseGenerationScripts\NostromosDatabaseDropAndCreateTo.sql" />
-    <Build Include="DatabaseGenerationScripts\SchemaGeneratingScript.sql" />
     <None Include="Requested queries\casualties.sql" />
+    <None Include="Requested queries\DeathNameCauseAndDate.sql" />
   </ItemGroup>
 </Project>
