@@ -10,6 +10,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Folder", "Folder", "{D4ACC4
 		Nostromo_Database\DatabaseGenerationScripts\Test.sql = Nostromo_Database\DatabaseGenerationScripts\Test.sql
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Queries", "Queries", "{3899D3EF-B36F-42F6-BF95-7C7319B1C2F3}"
+	ProjectSection(SolutionItems) = preProject
+		Nostromo_Database\Requested queries\aggregateByDeathCause.sql = Nostromo_Database\Requested queries\aggregateByDeathCause.sql
+		Nostromo_Database\Requested queries\AggregatedRankedMembers.sql = Nostromo_Database\Requested queries\AggregatedRankedMembers.sql
+		Nostromo_Database\Requested queries\averagepayofcrewAliveAndDead.sql = Nostromo_Database\Requested queries\averagepayofcrewAliveAndDead.sql
+		Nostromo_Database\Requested queries\casualties.sql = Nostromo_Database\Requested queries\casualties.sql
+		Nostromo_Database\Requested queries\deadCaptainsThatMakeOver50000.sql = Nostromo_Database\Requested queries\deadCaptainsThatMakeOver50000.sql
+		Nostromo_Database\Requested queries\DeadPeopleFromCertainPlanet.sql = Nostromo_Database\Requested queries\DeadPeopleFromCertainPlanet.sql
+		Nostromo_Database\Requested queries\DeadWithNameBetweenToDate.sql = Nostromo_Database\Requested queries\DeadWithNameBetweenToDate.sql
+		Nostromo_Database\Requested queries\DeathNameCauseAndDate.sql = Nostromo_Database\Requested queries\DeathNameCauseAndDate.sql
+		Nostromo_Database\Requested queries\MaxPayOfDeceased.sql = Nostromo_Database\Requested queries\MaxPayOfDeceased.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataGeneration", "DataGeneration", "{99301737-E8D1-489E-8D6F-E9FCBAE289DD}"
+	ProjectSection(SolutionItems) = preProject
+		Nostromo_Database\DatabaseGenerationScripts\DataInsertion.sql = Nostromo_Database\DatabaseGenerationScripts\DataInsertion.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,5 +43,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3899D3EF-B36F-42F6-BF95-7C7319B1C2F3} = {D4ACC483-F357-48FA-96CD-6B7B5EE83240}
+		{99301737-E8D1-489E-8D6F-E9FCBAE289DD} = {D4ACC483-F357-48FA-96CD-6B7B5EE83240}
 	EndGlobalSection
 EndGlobal
