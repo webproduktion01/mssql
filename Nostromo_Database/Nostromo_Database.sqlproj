@@ -63,6 +63,7 @@
     <Folder Include="dbo\Tables\" />
     <Folder Include="DatabaseGenerationScripts" />
     <Folder Include="Requested queries" />
+    <Folder Include="StoredProcedures" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Assignment.sql" />
@@ -77,6 +78,7 @@
     <None Include="Requested queries\casualties.sql" />
     <None Include="Requested queries\DeathNameCauseAndDate.sql" />
     <Build Include="DatabaseGenerationScripts\NostromoDropAndCreateTablesSQL.sql" />
+    <Build Include="StoredProcedures\NosBetweenDates.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Requested queries\deadCaptainsThatMakeOver50000.sql" />
